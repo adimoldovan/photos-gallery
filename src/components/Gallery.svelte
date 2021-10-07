@@ -82,19 +82,22 @@
         transform: translate(-50%, -50%);
     }
 
-    a.close,
-    a.prev,
-    a.next {
+    a.slideshow-nav {
+        color: #333333;
         z-index: 999999;
-        position: fixed;
         text-decoration: none;
-        color: white;
+        position: fixed;
         font-size: 36px;
+        background-color: #cccccc;
+        border-radius: 25px;
+        padding: 5px 10px 5px 10px;
+        opacity: 50%;
     }
 
     a.close {
         top: 1%;
-        right: 1%
+        right: 1%;
+        padding: 5px 15px 5px 15px;
     }
 
     a.prev,
@@ -121,9 +124,9 @@
         </a>
         <div class="lightbox" id="lightbox-{photo.id}">
             <img src="{getPhotoSource( photo.id, 'Large' )}" alt=""/>
-            <a class="next" href="#lightbox-{getNextPhotoId( photo.id )}">next</a>
-            <a class="close" href="#">X</a>
-            <a class="prev" href="#lightbox-{getPreviousPhotoId( photo.id )}">previous</a>
+            <a class="slideshow-nav next" href="#lightbox-{getNextPhotoId( photo.id )}">&#8594;</a>
+            <a class="slideshow-nav close" href="#">X</a>
+            <a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId( photo.id )}">&#8592;</a>
         </div>
     {/each}
 </div>
