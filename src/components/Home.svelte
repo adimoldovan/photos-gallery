@@ -8,7 +8,7 @@
     const album = albums.filter( album => album.id === albumId )[0];
     const randomIdx = Math.floor( Math.random() * album.photos.length );
     const randomPhotoId = album.photos[randomIdx];
-    return photos.filter( photo => photo.id === randomPhotoId )[0].url_n;
+    return photos.filter( photo => photo.id === randomPhotoId )[0].url_z;
   }
 
 </script>
@@ -17,20 +17,26 @@
     .album-cover-image {
         display: block;
         width: 100%;
-        max-height: 212px;
+        max-height: 427px;
         object-fit: cover;
         transition: .9s;
         cursor: pointer;
+        z-index: -1;
+        position: relative;
     }
 
     .album-caption {
         text-align: center;
-        padding-bottom: 15px;
-        padding-top: 15px;
-        border-bottom: #cccccc 1px solid;
-        border-left: #cccccc 1px solid;
-        border-right: #cccccc 1px solid;
-        color: #666666;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        /*border-bottom: #e5e5e5 1px solid;*/
+        /*border-left: #e5e5e5 1px solid;*/
+        /*border-right: #e5e5e5 1px solid;*/
+        color: #333;
+        background-color: #e5e5e5;
+        opacity: 70%;
+        /*margin-top: -55px;*/
+        z-index: 1;
     }
 
     @supports (display: grid) {
@@ -46,10 +52,6 @@
         }
     }
 
-    #tags {
-        text-align: center;
-        text-decoration: none;
-    }
 </style>
 
 <div id="gallery" class="gallery">
@@ -62,7 +64,7 @@
         </Link>
     {/each}
 </div>
-<div id="tags">
+<div class="tags">
     {#each tags as tag}
         <Link to="tag/{tag.tag}">#{tag.tag}</Link>&nbsp;
     {/each}

@@ -3,6 +3,8 @@
   import Album from '../components/Album.svelte';
   import Home from '../components/Home.svelte';
   import Tag from '../components/Tag.svelte';
+  import { Icon } from 'svelte-awesome';
+  import { github } from 'svelte-awesome/icons';
 
   export let url = '';
 </script>
@@ -17,4 +19,5 @@
         <Route path="tag/:name" component={Tag} />
         <Route path="/" component={Home} />
     </div>
+    <div class="footer"><a href="https://github.com/adimoldovan/flickr-gallery"><Icon data={github}/></a></div>
 </Router>

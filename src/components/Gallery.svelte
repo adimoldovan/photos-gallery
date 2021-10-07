@@ -37,7 +37,7 @@
     @supports (display: grid) {
         .gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+            grid-template-columns: repeat(auto-fill, minmax(400px, auto));
             grid-gap: 0.2rem;
         }
 
@@ -120,7 +120,7 @@
 <div id="gallery" class="gallery">
     {#each photoIds as photoId }
         <a class="gallery-item" href="#lightbox-{photoId}">
-            <img class="gallery-image" src="{getPhotoSource( photoId, 'url_n' )}" alt=""/>
+            <img class="gallery-image" src="{getPhotoSource( photoId, 'url_z' )}" alt=""/>
         </a>
         <div class="lightbox" id="lightbox-{photoId}">
             <img src="{getPhotoSource( photoId, 'url_l' )}" alt=""/>

@@ -18,7 +18,7 @@ a {
 
 .header	{
 	padding-bottom: 30px;
-	border-bottom: #999999 1px solid;
+	border-bottom: #d5d5d5 1px solid;
 }
 
 .site-title {
@@ -35,10 +35,21 @@ a {
 	color: #333;
 }
 
+.footer	{
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	border-top: #d5d5d5 1px solid;
+}
+
 .gallery {
 	padding-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
+	align-items: stretch;
+	text-align: center;
+	justify-content: center;
 }
 
 .gallery-item {
@@ -58,6 +69,19 @@ a {
 
 .gallery-image:hover {
 	transform: scale(1.1);
+}
+
+.tags {
+	padding-top: 20px;
+	text-align: center;
+}
+
+.tags a {
+	color: #666666;
+}
+
+.tags a:hover {
+	color: #333333;
 }
 
 
