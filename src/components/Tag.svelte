@@ -2,7 +2,8 @@
   import Gallery from './Gallery.svelte';
 
   export let name;
-  const photos = [];
+  import { tags } from './../portfolio.json';
+  const tag = tags.filter( tag => tag.tag === name )[0];
 </script>
 
-<Gallery title="{name}" photos="{photos}"/>
+<Gallery title="#{tag.tag}" photoIds="{tag.photos}"/>

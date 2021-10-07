@@ -1,31 +1,30 @@
 <script>
     export let title;
-    export let photos;
+    export let photoIds;
+
+    import { photos } from './../portfolio.json';
 
     function getPhotoSource( photoId, sizeLabel ) {
       const photo = photos.filter( photo => photo.id === photoId )[0];
-      const size = photo.sizes.size.filter( size => size.label === sizeLabel )[0];
-      return size.source;
+      return photo[sizeLabel];
     }
 
     function getNextPhotoId( photoId ) {
-      const photoIds = photos.map( photo => photo.id );
       const currentIdx = photoIds.indexOf( photoId );
 
-      if ( currentIdx === photos.length - 1 ) {
-        return photos.map( photo => photo.id )[0];
+      if ( currentIdx === photoIds.length - 1 ) {
+        return photoIds[0];
       }
-      return photos.map( photo => photo.id )[currentIdx + 1];
+      return photoIds[currentIdx + 1];
     }
 
     function getPreviousPhotoId( photoId ) {
-      const photoIds = photos.map( photo => photo.id );
       const currentIdx = photoIds.indexOf( photoId );
 
       if ( currentIdx === 0 ) {
-        return photos.map( photo => photo.id )[photos.length - 1];
+        return photoIds[photoIds.length - 1];
       }
-      return photos.map( photo => photo.id )[currentIdx - 1];
+      return photoIds[currentIdx - 1];
     }
 
 </script>
@@ -57,7 +56,7 @@
         left: 0;
         color:#333333;
         transition: opacity .5s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.86);
+        background-color: rgba(0, 0, 0, 0.9);
         text-align: center;
     }
 
@@ -95,9 +94,10 @@
     }
 
     a.close {
+        font-size: 24px;
         top: 1%;
         right: 1%;
-        padding: 5px 15px 5px 15px;
+        padding: 4px 12px 4px 12px;
     }
 
     a.prev,
@@ -118,15 +118,15 @@
 <h1 class="album-title">{title}</h1>
 
 <div id="gallery" class="gallery">
-    {#each photos as photo (photo.id)}
-        <a class="gallery-item" href="#lightbox-{photo.id}">
-            <img class="gallery-image" src="{getPhotoSource( photo.id, 'Small 320' )}" alt=""/>
+    {#each photoIds as photoId }
+        <a class="gallery-item" href="#lightbox-{photoId}">
+            <img class="gallery-image" src="{getPhotoSource( photoId, 'url_n' )}" alt=""/>
         </a>
-        <div class="lightbox" id="lightbox-{photo.id}">
-            <img src="{getPhotoSource( photo.id, 'Large' )}" alt=""/>
-            <a class="slideshow-nav next" href="#lightbox-{getNextPhotoId( photo.id )}">&#8594;</a>
-            <a class="slideshow-nav close" href="#">X</a>
-            <a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId( photo.id )}">&#8592;</a>
+        <div class="lightbox" id="lightbox-{photoId}">
+            <img src="{getPhotoSource( photoId, 'url_l' )}" alt=""/>
+            <a class="slideshow-nav next" href="#lightbox-{getNextPhotoId( photoId )}">&#8594;</a>
+            <a class="slideshow-nav close" href="{'#'}">X</a>
+            <a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId( photoId )}">&#8592;</a>
         </div>
     {/each}
 </div>
