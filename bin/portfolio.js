@@ -39,7 +39,9 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
         'url_z',
         'url_c',
         'url_l',
-        'url_o'
+        'url_o',
+        'url_h',
+        'url_k'
       ]
     } ).then( function ( res ) {
       console.log( `Found ${res.body.photoset.photo.length} photos in album ${album.title}` );

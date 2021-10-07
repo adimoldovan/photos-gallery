@@ -123,7 +123,7 @@
             <img class="gallery-image" src="{getPhotoSource( photoId, 'url_z' )}" alt=""/>
         </a>
         <div class="lightbox" id="lightbox-{photoId}">
-            <img src="{getPhotoSource( photoId, 'url_l' )}" alt=""/>
+            <img src="{getPhotoSource( photoId, 'url_k' )}" alt=""/>
             <a class="slideshow-nav next" href="#lightbox-{getNextPhotoId( photoId )}">&#8594;</a>
             <a class="slideshow-nav close" href="{'#'}">X</a>
             <a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId( photoId )}">&#8592;</a>
