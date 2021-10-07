@@ -1,5 +1,7 @@
 <script>
-	let name = 'world';
+  import Router from './routes/index.svelte';
 </script>
 
-<h1>Hello {name}!</h1>
+<main>
+    <Router />
+</main>

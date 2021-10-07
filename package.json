@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
@@ -24,6 +25,7 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
-    "sirv-cli": "^1.0.0"
+    "sirv-cli": "^1.0.0",
+    "svelte-routing": "^1.6.0"
   }
 }
