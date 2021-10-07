@@ -86,6 +86,7 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
           if ( photoTags.includes( tag.tag ) ) {
             tag.photos.push( photo.id );
           }
+          tag.count = tag.photos.length;
         }
 
         // process location - only extract country from existing place information
@@ -96,13 +97,11 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
     } );
   }
 
+  // sort tags by count
+  portfolio.tags.sort( ( a, b ) => parseFloat( b.count ) - parseFloat( a.count ) );
+
   console.log( JSON.stringify( portfolio, null, 2 ) );
 
   // write content in file
   fs.writeFileSync( './public/portfolio.json', JSON.stringify( portfolio, null, 2 ) );
-
-  if( !process.env.CI ) {
-    fs.writeFileSync( './src/portfolio.json', JSON.stringify( portfolio, null, 2 ) );
-  }
-
 } )();
