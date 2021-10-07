@@ -1,7 +1,7 @@
 <script>
-  import { albums } from './../portfolio.json';
-  import { photos } from './../portfolio.json';
-  import { tags } from './../portfolio.json';
+  import { albums } from '../../public/portfolio.json';
+  import { photos } from '../../public/portfolio.json';
+  import { tags } from '../../public/portfolio.json';
   import { Link } from 'svelte-routing';
 
   function getAlbumCoverUrl( albumId ) {

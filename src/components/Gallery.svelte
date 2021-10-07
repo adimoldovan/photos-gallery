@@ -2,7 +2,7 @@
     export let title;
     export let photoIds;
 
-    import { photos } from './../portfolio.json';
+    import { photos } from '../../public/portfolio.json';
 
     function getPhotoSource( photoId, sizeLabel ) {
       const photo = photos.filter( photo => photo.id === photoId )[0];
