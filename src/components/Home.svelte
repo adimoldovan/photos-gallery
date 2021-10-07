@@ -66,6 +66,6 @@
 </div>
 <div class="tags">
     {#each tags as tag}
-        <Link to="tag/{tag.tag}">#{tag.tag}</Link>&nbsp;
+        <span><Link to="tag/{tag.tag}">#{tag.tag}</Link>&#32;</span>
     {/each}
 </div>

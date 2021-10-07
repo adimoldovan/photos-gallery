@@ -74,6 +74,7 @@ a {
 .tags {
 	padding-top: 20px;
 	text-align: center;
+	word-wrap: normal;
 }
 
 .tags a {
