@@ -8,9 +8,9 @@
 </script>
 
 <Router {url}>
-    <div>
+    <div class="header">
         <h1 class="site-title"><Link to="/">Adrian Moldovan</Link></h1>
-        <div class="site-subtitle">&nbsp;</div>
+        <div class="site-subtitle">Amateur playing with pro tools</div>
     </div>
     <div>
         <Route path="album/:name" component={Album} />

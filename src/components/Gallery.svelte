@@ -32,7 +32,7 @@
 
 <style>
     .album-title {
-
+        text-align: center;
     }
 
     @supports (display: grid) {
@@ -113,7 +113,6 @@
 </style>
 
 <h1 class="album-title">{title}</h1>
-<hr/>
 
 <div id="gallery" class="gallery">
     {#each photos as photo (photo.id)}

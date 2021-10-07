@@ -16,6 +16,11 @@ a {
 	text-decoration: none;
 }
 
+.header	{
+	padding-bottom: 30px;
+	border-bottom: #999999 1px solid;
+}
+
 .site-title {
 	text-align: center;
 	color: #333;
@@ -25,7 +30,13 @@ a {
 	color: #333;
 }
 
+.site-subtitle {
+	text-align: center;
+	color: #333;
+}
+
 .gallery {
+	padding-top: 30px;
 	display: flex;
 	flex-wrap: wrap;
 }
