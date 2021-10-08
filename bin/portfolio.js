@@ -2,7 +2,7 @@ const fs = require( 'fs' );
 const Flickr = require( 'flickr-sdk' );
 const flickr = new Flickr( process.env.FLICKR_API_KEY );
 
-const config = JSON.parse( fs.readFileSync( './bin/config.json' ).toString() );
+const config = JSON.parse( fs.readFileSync( './config.json' ).toString() );
 const portfolio = { albums:[], photos:[], tags:[], places:[] };
 
 ( async function () {

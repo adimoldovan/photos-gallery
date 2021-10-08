@@ -1,0 +1,33 @@
+name: Build portfolio
+
+on:
+  schedule:
+    - cron: '30 11 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Fetch Flickr data
+        run: |
+          node bin/portfolio.js
+      - name: Push changes
+        run: |
+          git config --local user.name "github-actions-bot"
+          git config --local user.email "github-actions-bot-noreply@noreply"
+          touch datalog
+          echo $(date +"%d %b %Y %H-%M %Z") > datalog
+          git add .
+          git commit -m "Data update $(date +"%d %b %Y %H-%M %Z")"
+          git pull
+          git push
