@@ -28,6 +28,8 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
       user_id: config.userId,
       photoset_id:album.id,
       extras: [
+        'date_taken',
+        'date_upload',
         'tags',
         'geo',
         'url_sq',
@@ -95,12 +97,14 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
     } ).catch( function ( err ) {
       console.error( err );
     } );
+
+    album.photos.sort( ( a, b ) => parseInt( b.count ) - parseInt( a.count ) );
   }
 
   // sort tags by count
-  portfolio.tags.sort( ( a, b ) => parseFloat( b.count ) - parseFloat( a.count ) );
+  portfolio.tags.sort( ( a, b ) => parseInt( b.count ) - parseInt( a.count ) );
 
-  console.log( JSON.stringify( portfolio, null, 2 ) );
+  // console.log( JSON.stringify( portfolio, null, 2 ) );
 
   // write content in file
   fs.writeFileSync( './public/portfolio.json', JSON.stringify( portfolio, null, 2 ) );

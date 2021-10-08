@@ -4,8 +4,20 @@
 
     import { photos } from '../../public/portfolio.json';
 
-    function getPhotoSource( photoId, sizeLabel ) {
+    const sizes = [ 'url_k', 'url_h', 'url_l', 'url_c', 'url_z' ];
+
+    function getPhotoSource( photoId, sizeLabel, fixSize = true ) {
       const photo = photos.filter( photo => photo.id === photoId )[0];
+
+      if( !fixSize && !photo[sizeLabel] ) {
+        for( const size of sizes ) {
+          const photo = photos.filter( photo => photo.id === photoId )[0];
+          if ( photo[size] ) {
+            return photo[size];
+          }
+        }
+      }
+
       return photo[sizeLabel];
     }
 
@@ -93,6 +105,10 @@
         opacity: 50%;
     }
 
+    a.slideshow-nav:hover {
+        opacity: 90%;
+    }
+
     a.close {
         font-size: 24px;
         top: 1%;
@@ -123,7 +139,7 @@
             <img class="gallery-image" src="{getPhotoSource( photoId, 'url_z' )}" alt=""/>
         </a>
         <div class="lightbox" id="lightbox-{photoId}">
-            <img src="{getPhotoSource( photoId, 'url_k' )}" alt=""/>
+            <img src="{getPhotoSource( photoId, 'url_k', false )}" alt=""/>
             <a class="slideshow-nav next" href="#lightbox-{getNextPhotoId( photoId )}">&#8594;</a>
             <a class="slideshow-nav close" href="{'#'}">X</a>
             <a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId( photoId )}">&#8592;</a>
