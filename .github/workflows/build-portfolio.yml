@@ -1,12 +1,10 @@
 name: Build portfolio
 
 on:
-  schedule:
-    - cron: '30 11 * * *'
   workflow_dispatch:
 
 jobs:
-  fetch-data:
+  fetch-flickr-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
