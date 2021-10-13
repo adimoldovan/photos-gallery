@@ -19,12 +19,9 @@
         text-align: center;
         padding-bottom: 20px;
         padding-top: 20px;
-        /*border-bottom: #e5e5e5 1px solid;*/
-        /*border-left: #e5e5e5 1px solid;*/
-        /*border-right: #e5e5e5 1px solid;*/
-        color: #333;
+        color: #222;
         background-color: #e5e5e5;
-        opacity: 70%;
+        opacity: 80%;
         z-index: 1;
         left: 50%;
         width: 100%;
@@ -42,6 +39,7 @@
     {/each}
 </div>
 <div class="tags">
+    <h2>&nbsp;</h2>
     {#each tags as tag}
         <span><Link to="tag/{tag.tag}">#{tag.tag} ({tag.count})</Link>&#32;</span>
     {/each}

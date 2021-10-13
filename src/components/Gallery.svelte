@@ -39,11 +39,36 @@
       return photoIds[currentIdx - 1];
     }
 
+    document.addEventListener( 'keydown', function ( event ) {
+      if( !location.hash.startsWith( '#lightbox' ) ) {
+        return;
+      }
+
+      const keyMap = [ {
+        key: 'ArrowRight',
+        selector: 'next'
+      }, {
+        key: 'ArrowLeft',
+        selector: 'prev'
+      },
+      {
+        key: 'Escape',
+        selector: 'close'
+      } ];
+
+      for ( const keyEntry of keyMap ) {
+        if ( event.key === keyEntry.key ) {
+          const targetElement = document.querySelector( `${location.hash} > a.${keyEntry.selector}` );
+          targetElement.click();
+        }
+      }
+    } );
+
 </script>
 
 <style>
     .album-title {
-        text-align: center;
+        /*text-align: center;*/
     }
 
     .lightbox {
@@ -65,10 +90,6 @@
     }
 
     .lightbox img {
-        /*max-width: 100%;*/
-        /*!*max-height: calc(100vh - 225px);*!*/
-        /*height: auto;*/
-
         position: fixed;
         background-color: white;
         padding: 0;

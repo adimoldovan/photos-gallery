@@ -12,6 +12,10 @@ body {
 	font-family: Geneva, ui-sans-serif;
 }
 
+.main {
+	padding: 20px;
+}
+
 a {
 	text-decoration: none;
 }
@@ -24,6 +28,7 @@ a {
 .site-title {
 	text-align: center;
 	color: #333;
+	margin: 0;
 }
 
 .site-title a {
@@ -31,6 +36,7 @@ a {
 }
 
 .site-subtitle {
+	margin: 0;
 	text-align: center;
 	color: #333;
 }
@@ -44,16 +50,10 @@ a {
 }
 
 .gallery {
-	padding-top: 30px;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: stretch;
 	text-align: center;
-	justify-content: center;
 }
 
 .gallery-item {
-	/*flex: 0 1 14rem;*/
 	margin: 0.1rem;
 	overflow: hidden;
 	text-align: center;
@@ -78,6 +78,7 @@ a {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(400px, auto));
 		grid-gap: 0.2rem;
+		justify-content: center;
 	}
 
 	.gallery,
