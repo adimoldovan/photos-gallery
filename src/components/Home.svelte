@@ -14,18 +14,8 @@
 </script>
 
 <style>
-    .album-cover-image {
-        display: block;
-        width: 100%;
-        max-height: 427px;
-        object-fit: cover;
-        transition: .9s;
-        cursor: pointer;
-        z-index: -1;
-        position: relative;
-    }
-
     .album-caption {
+        position: absolute;
         text-align: center;
         padding-bottom: 20px;
         padding-top: 20px;
@@ -35,33 +25,20 @@
         color: #333;
         background-color: #e5e5e5;
         opacity: 70%;
-        /*margin-top: -55px;*/
         z-index: 1;
-    }
-
-    @supports (display: grid) {
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(400px, auto));
-            grid-gap: 0.2rem;
-        }
-
-        .gallery,
-        .gallery-item {
-            margin: 0;
-        }
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -100%);
     }
 
 </style>
 
 <div id="gallery" class="gallery">
     {#each albums as album (album.id)}
-        <Link to="album/{album.title}" class="gallery-item">
-            <figure class="album-figure">
-                <img class="album-cover-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
-                <figcaption class="album-caption">{album.title}</figcaption>
-            </figure>
-        </Link>
+            <Link to="album/{album.title}" class="gallery-item">
+                <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
+                <div class="album-caption">{album.title}</div>
+            </Link>
     {/each}
 </div>
 <div class="tags">

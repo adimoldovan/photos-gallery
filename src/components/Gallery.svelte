@@ -46,19 +46,6 @@
         text-align: center;
     }
 
-    @supports (display: grid) {
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, auto));
-            grid-gap: 0.2rem;
-        }
-
-        .gallery,
-        .gallery-item {
-            margin: 0;
-        }
-    }
-
     .lightbox {
         display: none;
         position: fixed;
