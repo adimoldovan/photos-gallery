@@ -11,6 +11,8 @@
     return photos.filter( photo => photo.id === randomPhotoId )[0].url_z;
   }
 
+
+
 </script>
 
 <style>
@@ -39,7 +41,7 @@
     {/each}
 </div>
 <div class="tags">
-    <h2>&nbsp;</h2>
+    <h2>Tags</h2>
     {#each tags as tag}
         <span><Link to="tag/{tag.tag}">#{tag.tag} ({tag.count})</Link>&#32;</span>
     {/each}

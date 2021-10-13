@@ -89,8 +89,9 @@ a {
 
 .tags {
 	padding-top: 20px;
-	text-align: center;
+	text-align: justify;
 	word-wrap: normal;
+	font-size: 0.8em;
 }
 
 .tags a {
@@ -99,6 +100,21 @@ a {
 
 .tags a:hover {
 	color: #333333;
+}
+
+.key {
+	border:1px solid gray;
+	box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;
+	-webkit-border-radius:2px;
+	-moz-border-radius:2px;
+	border-radius:2px;
+	margin:2px 3px;
+	padding:1px 5px;
+}
+
+.keys-help {
+	margin-bottom: 30px;
+	font-size: 0.8em;
 }
 
 

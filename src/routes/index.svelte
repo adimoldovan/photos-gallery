@@ -5,6 +5,7 @@
   import Tag from '../components/Tag.svelte';
   import { Icon } from 'svelte-awesome';
   import { github } from 'svelte-awesome/icons';
+  import Photo from '../components/Photo.svelte';
 
   export let url = '';
 </script>
@@ -17,7 +18,17 @@
     <div>
         <Route path="album/:name" component={Album} />
         <Route path="tag/:name" component={Tag} />
+        <Route path="photo" component={Photo} />
         <Route path="/" component={Home} />
     </div>
-    <div class="footer"><a href="https://github.com/adimoldovan/flickr-gallery"><Icon data={github}/></a></div>
+    <div class="footer">
+        <div class="keys-help">
+            <span class="key">R</span> display a random photo
+            <span class="key">H</span> navigate to home page
+            <span class="key">&rarr;</span> next photo in slideshow
+            <span class="key">&larr;</span> previous photo in slideshow
+            <span class="key">ESC</span> exit slideshow
+        </div>
+        <a href="https://github.com/adimoldovan/flickr-gallery"><Icon data={github}/></a>
+    </div>
 </Router>
