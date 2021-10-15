@@ -32,6 +32,6 @@
             <span class="key">&larr;</span> previous photo in slideshow
             <span class="key">ESC</span> exit slideshow
         </div>
-        <a href="https://github.com/adimoldovan/flickr-gallery"><Icon data={github}/></a>
+        <a href="{config.gitUrl}"><Icon data={github}/></a>
     </div>
 </Router>
