@@ -6,14 +6,17 @@
   import { Icon } from 'svelte-awesome';
   import { github } from 'svelte-awesome/icons';
   import Photo from '../components/Photo.svelte';
+  import config from '../../public/config.json';
+
+  document.title = `${config.siteTitle} - ${config.siteSubtitle}`;
 
   export let url = '';
 </script>
 
 <Router {url}>
     <div class="header">
-        <h1 class="site-title"><Link to="/">Adrian Moldovan</Link></h1>
-        <div class="site-subtitle">Amateur playing with pro tools</div>
+        <h1 class="site-title"><Link to="/">{config.siteTitle}</Link></h1>
+        <div class="site-subtitle">{config.siteSubtitle}</div>
     </div>
     <div>
         <Route path="album/:name" component={Album} />

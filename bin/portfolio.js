@@ -1,16 +1,16 @@
 const fs = require( 'fs' );
 const Flickr = require( 'flickr-sdk' );
-const flickr = new Flickr( process.env.FLICKR_API_KEY );
+const { FLICKR_API_KEY, FLICKR_USER_ID, FLICKR_COLLECTION_ID } = process.env;
+const flickr = new Flickr( FLICKR_API_KEY );
 
-const config = JSON.parse( fs.readFileSync( './config.json' ).toString() );
 const portfolio = { albums:[], photos:[], tags:[], places:[] };
 
 ( async function () {
   // get albums in Portfolio collection
   await flickr.collections.getTree(
     {
-      user_id: config.userId,
-      collection_id: config.collectionId
+      user_id: FLICKR_USER_ID,
+      collection_id: FLICKR_COLLECTION_ID
     } ).then( function ( res ) {
     console.log( `Found ${res.body.collections.collection[0].set.length} albums in collection` );
     for ( const album of res.body.collections.collection[0].set ) {
@@ -25,7 +25,7 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
     album.photos = [];
 
     await flickr.photosets.getPhotos( {
-      user_id: config.userId,
+      user_id: FLICKR_USER_ID,
       photoset_id:album.id,
       extras: [
         'date_taken',
