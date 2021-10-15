@@ -19,6 +19,8 @@ jobs:
       - name: Fetch Flickr data
         env:
           FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+          FLICKR_USER_ID: ${{ secrets.FLICKR_USER_ID }}
+          FLICKR_COLLECTION_ID: ${{ secrets.FLICKR_COLLECTION_ID }}
         run: |
           node bin/portfolio.js
       - name: Push changes
