@@ -1,8 +1,8 @@
 <script>
   import Gallery from './Gallery.svelte';
+  import { tags } from '../../public/portfolio.json';
 
   export let name;
-  import { tags } from '../../public/portfolio.json';
   const tag = tags.filter( tag => tag.tag === name )[0];
 </script>
 

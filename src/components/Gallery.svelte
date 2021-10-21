@@ -80,7 +80,7 @@
         left: 0;
         color:#333333;
         transition: opacity .5s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgba(0, 0, 0, 0.95);
         text-align: center;
     }
 
@@ -108,7 +108,7 @@
         position: fixed;
         font-size: 36px;
         background-color: #cccccc;
-        border-radius: 25px;
+        border-radius: 30px;
         padding: 5px 10px 5px 10px;
         opacity: 50%;
     }

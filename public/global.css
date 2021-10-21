@@ -41,12 +41,10 @@ a {
 	color: #333;
 }
 
-.footer	{
-	margin-top: 30px;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	border-top: #d5d5d5 1px solid;
+h2 {
+	font-size: 2.2em;
+	letter-spacing: -1px;
+	font-weight: bolder;
 }
 
 .gallery {
@@ -102,7 +100,38 @@ a {
 	color: #333333;
 }
 
-.key {
+.footer	{
+	margin-top: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	border-top: #d5d5d5 1px solid;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: #999999;
+}
+
+.footer-source {
+	text-align: center;
+	color: #999999;
+}
+
+.footer-source > a {
+	color: #999999;
+}
+
+.footer > div {
+	flex: 50%;
+}
+
+@media (max-width: 800px) {
+	.footer > div {
+		flex: 100%;
+	}
+}
+
+.bk-key {
 	border:1px solid gray;
 	box-shadow:1px 0 1px 0 #eee, 0 2px 0 2px #ccc, 0 2px 0 3px #444;
 	-webkit-border-radius:2px;
@@ -110,12 +139,14 @@ a {
 	border-radius:2px;
 	margin:2px 3px;
 	padding:1px 5px;
+	font-size: 0.8em;
+}
+
+.key {
+	font-weight: bolder;
 }
 
 .keys-help {
-	margin-bottom: 30px;
 	font-size: 0.8em;
 	line-height: 2.2;
 }
-
-
