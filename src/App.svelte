@@ -8,6 +8,7 @@
   import { github } from 'svelte-awesome/icons';
   import Photo from './components/Photo.svelte';
   import config from './../public/config.json';
+  import { onMount } from 'svelte';
 
   document.title = `${config.siteTitle} - ${config.siteSubtitle}`;
 
@@ -27,6 +28,26 @@
       location.assign ( location.origin );
     }
   } );
+
+  onMount( async () => {
+    const goTopBtn = document.getElementById( 'go-top' );
+    window.onscroll = function() { scrollFunction(); };
+
+    function scrollFunction() {
+      if ( document.body.scrollTop > 200 || document.documentElement.scrollTop > 200 ) {
+        goTopBtn.style.display = 'block';
+      } else {
+        goTopBtn.style.display = 'none';
+      }
+    }
+  } );
+
+
+  function goTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+
 </script>
 
 <main class="main">
@@ -54,4 +75,5 @@
             <a href="{config.gitUrl}"><Icon data={github}/></a>
         </div>
     </Router>
+    <button id="go-top" on:click={goTop}>&uarr;</button>
 </main>

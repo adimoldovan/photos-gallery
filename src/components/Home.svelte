@@ -2,7 +2,6 @@
   import { albums } from '../../public/portfolio.json';
   import { photos } from '../../public/portfolio.json';
   import { tags } from '../../public/portfolio.json';
-  import { Link } from 'svelte-routing';
 
   function getAlbumCoverUrl( albumId ) {
     const album = albums.filter( album => album.id === albumId )[0];
@@ -45,25 +44,24 @@
         width: 100%;
         transform: translateY(-100%);
     }
-
 </style>
 
 <h2>Albums</h2>
 <div id="albums-gallery" class="gallery">
     {#each albums as album (album.id)}
-            <Link to="album/{album.title}" class="gallery-item">
+            <a href="album/{album.title}" class="gallery-item">
                 <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
                 <h1 class="album-caption">{album.title}</h1>
-            </Link>
+            </a>
     {/each}
 </div>
 <h2>Tags</h2>
 <div id="tags-gallery" class="gallery">
     {#each popularTags as tag}
-        <Link to="tag/{tag.tag}" class="gallery-item">
+        <a href="tag/{tag.tag}" class="gallery-item">
             <img class="gallery-image" src="{getTagCoverUrl( tag )}" alt="{tag.tag}"/>
             <h1 class="album-caption">#{tag.tag}</h1>
-        </Link>
+        </a>
     {/each}
 </div>
 

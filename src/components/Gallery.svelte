@@ -67,8 +67,9 @@
 </script>
 
 <style>
-    .album-title {
-        /*text-align: center;*/
+    .gallery-image:hover {
+        transform: scale(1.1);
+        transition: transform 3s ease;
     }
 
     .lightbox {
@@ -107,14 +108,13 @@
         text-decoration: none;
         position: fixed;
         font-size: 36px;
-        background-color: #cccccc;
-        border-radius: 30px;
+        border-radius: 12px;
         padding: 5px 10px 5px 10px;
-        opacity: 50%;
+        background-color: rgba(204, 204, 204, 0.5);
     }
 
     a.slideshow-nav:hover {
-        opacity: 90%;
+        background-color: rgba(204, 204, 204, 1);
     }
 
     a.close {
