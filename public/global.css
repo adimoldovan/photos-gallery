@@ -65,6 +65,7 @@ h2 {
 	object-fit: cover;
 	cursor: pointer;
 	transition: 0.9s;
+	max-height: 250px;
 }
 
 .gallery:hover .gallery-image {
