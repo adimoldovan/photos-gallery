@@ -151,11 +151,18 @@ h2 {
 
 .key {
 	font-weight: bolder;
+	margin-bottom: 0;
+	padding: 0;
 }
 
 .keys-help {
 	font-size: 0.8em;
 	line-height: 2.2;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
+	justify-content: space-evenly;
+	gap: 1.2em;
 }
 
 #go-top {

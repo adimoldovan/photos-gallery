@@ -64,15 +64,15 @@
         </div>
         <div class="footer">
             <div class="keys-help">
-                <span class="key">R</span> - random photo •
-                <span class="key">H</span> - home page •
-                <span class="key">&rarr;</span> - next photo •
-                <span class="key">&larr;</span> - previous photo •
-                <span class="key">ESC</span> - exit slideshow
+                <div><div class="key">R</div>random photo</div>
+                <div><div class="key">H</div>home page</div>
+                <div><div class="key">&rarr;</div>next photo</div>
+                <div><div class="key">&larr;</div>previous photo</div>
+                <div><div class="key">ESC</div>exit slideshow</div>
             </div>
         </div>
         <div class="footer-source">
-            <a href="{config.gitUrl}"><Icon data={github}/></a>
+            <a href="{config.gitUrl}" target="_blank"><Icon data={github}/></a>
         </div>
     </Router>
     <button id="go-top" on:click={goTop}>&uarr;</button>
