@@ -1,12 +1,12 @@
-const fs = require( 'fs' );
-const Flickr = require( 'flickr-sdk' );
-const { FLICKR_API_KEY, FLICKR_USER_ID, FLICKR_COLLECTION_ID, BIG_DATA_CLOUD_API_KEY } = process.env;
-const flickr = new Flickr( FLICKR_API_KEY );
-const geoClient = require( '@bigdatacloudapi/client' )( BIG_DATA_CLOUD_API_KEY );
-
-const portfolio = { albums:[], photos:[], tags:[], places:[] };
-
 ( async function () {
+  const fs = require( 'fs' );
+  const Flickr = require( 'flickr-sdk' );
+  const { FLICKR_API_KEY, FLICKR_USER_ID, FLICKR_COLLECTION_ID, BIG_DATA_CLOUD_API_KEY } = process.env;
+  const flickr = new Flickr( FLICKR_API_KEY );
+  const geoClient = require( '@bigdatacloudapi/client' )( BIG_DATA_CLOUD_API_KEY );
+
+  const portfolio = { albums:[], photos:[], tags:[], places:[] };
+
   // get albums in Portfolio collection
   await flickr.collections.getTree(
     {
