@@ -7,13 +7,12 @@ html, body {
 body {
 	color: #333;
 	margin: 0;
-	padding: 2px;
 	box-sizing: border-box;
 	font-family: Geneva, ui-sans-serif;
 }
 
 .main {
-	padding: 20px;
+	padding: 10px;
 }
 
 a {

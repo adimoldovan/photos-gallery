@@ -127,10 +127,14 @@
     album.photos.sort( ( a, b ) => parseInt( b.count ) - parseInt( a.count ) );
   }
 
+  // sort albums by photo count
+  portfolio.albums.sort( ( a, b ) => parseInt( b.photos.length ) - parseInt( a.photos.length ) );
+
   // sort tags by count
   portfolio.tags.sort( ( a, b ) => parseInt( b.count ) - parseInt( a.count ) );
 
-  // console.log( JSON.stringify( portfolio, null, 2 ) );
+  // sort places by count
+  portfolio.places.sort( ( a, b ) => parseInt( b.count ) - parseInt( a.count ) );
 
   // write content in file
   fs.writeFileSync( './public/portfolio.json', JSON.stringify( portfolio, null, 2 ) );
