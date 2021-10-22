@@ -1,7 +1,8 @@
 const fs = require( 'fs' );
 const Flickr = require( 'flickr-sdk' );
-const { FLICKR_API_KEY, FLICKR_USER_ID, FLICKR_COLLECTION_ID } = process.env;
+const { FLICKR_API_KEY, FLICKR_USER_ID, FLICKR_COLLECTION_ID, BIG_DATA_CLOUD_API_KEY } = process.env;
 const flickr = new Flickr( FLICKR_API_KEY );
+const geoClient = require( '@bigdatacloudapi/client' )( BIG_DATA_CLOUD_API_KEY );
 
 const portfolio = { albums:[], photos:[], tags:[], places:[] };
 
@@ -91,8 +92,39 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
           tag.count = tag.photos.length;
         }
 
-        // process location - only extract country from existing place information
-        // todo
+        // resolve country from coordinates
+        if( photo.latitude && photo.longitude )
+        {
+          geoClient.getReverseGeocodeWithTimezone( { latitude:photo.latitude, longitude: photo.longitude } )
+            .then( jsonResult => {
+              photo.country = jsonResult.countryName;
+
+              if( photo.country ) {
+                const existingPlaces = portfolio.places.map( place => place.name );
+
+                // create place if it doesn't already exist
+                if( !existingPlaces.includes( photo.country ) ) {
+                  portfolio.places.push( { name: photo.country, photos:[], count: 0 } );
+                }
+
+                // push photo in place's photos list
+                for( const place of portfolio.places ) {
+                  if ( place.name === photo.country ) {
+                    place.photos.push( photo.id );
+                  }
+                  place.count = place.photos.length;
+                }}
+            } )
+            .catch( function( error ) {
+              console.error( 'Error getting country from coordinates: ', error );
+            } );
+
+        }
+
+
+
+
+
       }
     } ).catch( function ( err ) {
       console.error( err );

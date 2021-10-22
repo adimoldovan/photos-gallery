@@ -9,6 +9,7 @@
     "data:flickr": "node ./bin/flickr-portfolio.js"
   },
   "devDependencies": {
+    "@bigdatacloudapi/client": "^1.1.1",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.0.0",

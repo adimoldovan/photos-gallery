@@ -168,7 +168,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563844892_0a52e46686_k.jpg",
       "height_k": 996,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565325719",
@@ -178,10 +179,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "blackandwhite architecture valencia",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "39.457500",
+      "longitude": "-0.355834",
+      "accuracy": "16",
       "context": 0,
+      "place_id": "",
+      "woeid": "6362115",
       "url_sq": "https://live.staticflickr.com/65535/51565325719_6f822e8f08_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -214,7 +217,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51565325719_ed363cbdc3_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565326289",
@@ -224,10 +228,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "blackandwhite architecture valencia",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "39.457500",
+      "longitude": "-0.355834",
+      "accuracy": "16",
       "context": 0,
+      "place_id": "",
+      "woeid": "6362115",
       "url_sq": "https://live.staticflickr.com/65535/51565326289_58b70b1e5e_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -260,7 +266,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51565326289_9372e1d186_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565326934",
@@ -308,7 +315,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51565326934_7f450c41d3_k.jpg",
       "height_k": 1168,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Norway"
     },
     {
       "id": "51563847797",
@@ -356,7 +364,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563847797_ee8e86b9c8_k.jpg",
       "height_k": 1536,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "South Africa"
     },
     {
       "id": "51563422705",
@@ -1145,10 +1154,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "bird seascape glacier ducks iceberg ice",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "64.050274",
+      "longitude": "-16.182518",
+      "accuracy": "11",
       "context": 0,
+      "place_id": "",
+      "woeid": "8692904",
       "url_sq": "https://live.staticflickr.com/65535/51561873077_a765432a8f_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1181,7 +1192,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51561873077_dae44fc6c5_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Iceland"
     },
     {
       "id": "51563353844",
@@ -1191,10 +1203,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "bird puffin wild",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "63.509375",
+      "longitude": "-19.599609",
+      "accuracy": "9",
       "context": 0,
+      "place_id": "",
+      "woeid": "2633043",
       "url_sq": "https://live.staticflickr.com/65535/51563353844_2e6f361fd6_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1221,7 +1235,8 @@
       "width_c": 800,
       "url_l": "https://live.staticflickr.com/65535/51563353844_2e6f361fd6_b.jpg",
       "height_l": 683,
-      "width_l": 1024
+      "width_l": 1024,
+      "country": "Iceland"
     },
     {
       "id": "51563354339",
@@ -1231,10 +1246,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "bird puffin wild",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "63.509375",
+      "longitude": "-19.599609",
+      "accuracy": "9",
       "context": 0,
+      "place_id": "",
+      "woeid": "2633043",
       "url_sq": "https://live.staticflickr.com/65535/51563354339_6b1d5b766a_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1267,7 +1284,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563354339_36dac00e99_k.jpg",
       "height_k": 1551,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Iceland"
     },
     {
       "id": "51561706227",
@@ -1691,10 +1709,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "glacier ice iceberg seascape",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "64.051476",
+      "longitude": "-16.180114",
+      "accuracy": "11",
       "context": 0,
+      "place_id": "",
+      "woeid": "8692904",
       "url_sq": "https://live.staticflickr.com/65535/51561867922_26e0e4f3fe_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1727,7 +1747,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51561867922_e41c620177_k.jpg",
       "height_k": 1149,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Iceland"
     },
     {
       "id": "51563587910",
@@ -1737,10 +1758,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "glacier seascape iceberg ice",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "64.051025",
+      "longitude": "-16.180114",
+      "accuracy": "11",
       "context": 0,
+      "place_id": "",
+      "woeid": "8692904",
       "url_sq": "https://live.staticflickr.com/65535/51563587910_5db15bb3ab_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1773,7 +1796,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563587910_6b4fc40a62_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Iceland"
     },
     {
       "id": "51563349539",
@@ -1921,10 +1945,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "water mountains lake mobile mirror iphone",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "45.604340",
+      "longitude": "24.618172",
+      "accuracy": "14",
       "context": 0,
+      "place_id": "",
+      "woeid": "11395371",
       "url_sq": "https://live.staticflickr.com/65535/51563844572_720954d50e_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -1957,7 +1983,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563844572_336f275e8a_k.jpg",
       "height_k": 1046,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Romania"
     },
     {
       "id": "51562495866",
@@ -2059,10 +2086,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "astro sky nightphotography milkyway",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "46.784310",
+      "longitude": "22.862892",
+      "accuracy": "13",
       "context": 0,
+      "place_id": "BBOeG9hXVLLN.qY",
+      "woeid": "668760",
       "url_sq": "https://live.staticflickr.com/65535/51582306683_dba0dbfa80_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -2105,10 +2134,12 @@
       "datetakengranularity": "0",
       "datetakenunknown": "0",
       "tags": "astro sky nightphotography milkyway",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "46.784310",
+      "longitude": "22.862892",
+      "accuracy": "13",
       "context": 0,
+      "place_id": "BBOeG9hXVLLN.qY",
+      "woeid": "668760",
       "url_sq": "https://live.staticflickr.com/65535/51582975229_9ce979424e_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -2151,10 +2182,12 @@
       "datetakengranularity": 0,
       "datetakenunknown": "1",
       "tags": "astro sky nightphotography milkyway",
-      "latitude": 0,
-      "longitude": 0,
-      "accuracy": 0,
+      "latitude": "46.784310",
+      "longitude": "22.862892",
+      "accuracy": "13",
       "context": 0,
+      "place_id": "BBOeG9hXVLLN.qY",
+      "woeid": "668760",
       "url_sq": "https://live.staticflickr.com/65535/51584182118_4ee790efa0_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
@@ -2674,5 +2707,47 @@
       "count": 1
     }
   ],
-  "places": []
+  "places": [
+    {
+      "name": "Spain",
+      "photos": [
+        "51563844892",
+        "51565325719",
+        "51565326289"
+      ],
+      "count": 3
+    },
+    {
+      "name": "Norway",
+      "photos": [
+        "51565326934"
+      ],
+      "count": 1
+    },
+    {
+      "name": "South Africa",
+      "photos": [
+        "51563847797"
+      ],
+      "count": 1
+    },
+    {
+      "name": "Iceland",
+      "photos": [
+        "51561873077",
+        "51563354339",
+        "51563353844",
+        "51563587910",
+        "51561867922"
+      ],
+      "count": 5
+    },
+    {
+      "name": "Romania",
+      "photos": [
+        "51563844572"
+      ],
+      "count": 1
+    }
+  ]
 }

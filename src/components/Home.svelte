@@ -2,6 +2,9 @@
   import { albums } from '../../public/portfolio.json';
   import { photos } from '../../public/portfolio.json';
   import { tags } from '../../public/portfolio.json';
+  import { places } from '../../public/portfolio.json';
+  import { Icon } from 'svelte-awesome';
+  import { map } from 'svelte-awesome/icons';
 
   function getAlbumCoverUrl( albumId ) {
     const album = albums.filter( album => album.id === albumId )[0];
@@ -13,6 +16,12 @@
   function getTagCoverUrl( tag ) {
     const randomIdx = Math.floor( Math.random() * tag.photos.length );
     const randomPhotoId = tag.photos[randomIdx];
+    return photos.filter( photo => photo.id === randomPhotoId )[0].url_z;
+  }
+
+  function getPlaceCoverUrl( place ) {
+    const randomIdx = Math.floor( Math.random() * place.photos.length );
+    const randomPhotoId = place.photos[randomIdx];
     return photos.filter( photo => photo.id === randomPhotoId )[0].url_z;
   }
 
@@ -53,6 +62,15 @@
                 <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
                 <h1 class="album-caption">{album.title}</h1>
             </a>
+    {/each}
+</div>
+<h2>Places</h2>
+<div id="places-gallery" class="gallery">
+    {#each places as place}
+        <a href="place/{place.name}" class="gallery-item">
+            <img class="gallery-image" src="{getPlaceCoverUrl( place )}" alt="{place.name}"/>
+            <h1 class="album-caption"><Icon data={map} scale={3}/><br/>{place.name}</h1>
+        </a>
     {/each}
 </div>
 <h2>Tags</h2>

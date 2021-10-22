@@ -9,6 +9,7 @@
   import Photo from './components/Photo.svelte';
   import config from './../public/config.json';
   import { onMount } from 'svelte';
+  import Place from './components/Place.svelte';
 
   document.title = `${config.siteTitle} - ${config.siteSubtitle}`;
 
@@ -59,6 +60,7 @@
         <div>
             <Route path="album/:name" component={Album} />
             <Route path="tag/:name" component={Tag} />
+            <Route path="place/:name" component={Place} />
             <Route path="photo" component={Photo} />
             <Route path="/" component={Home} />
         </div>
