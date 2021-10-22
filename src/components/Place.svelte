@@ -6,4 +6,4 @@
   const place = places.filter( place => place.name === name )[0];
 </script>
 
-<Gallery title="#{place.name}" photoIds="{place.photos}"/>
+<Gallery title="{place.name}" photoIds="{place.photos}"/>

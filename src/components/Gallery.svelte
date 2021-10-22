@@ -64,6 +64,8 @@
       }
     } );
 
+    console.log( location.pathname );
+
 </script>
 
 <style>
@@ -139,7 +141,9 @@
     }
 </style>
 
-<h1 class="album-title">{title}</h1>
+<h1 class="album-title">
+    {title}
+</h1>
 
 <div id="gallery" class="gallery">
     {#each photoIds as photoId }
