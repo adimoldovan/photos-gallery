@@ -4,7 +4,7 @@
   import { tags } from '../../public/portfolio.json';
   import { places } from '../../public/portfolio.json';
   import { Icon } from 'svelte-awesome';
-  import { map } from 'svelte-awesome/icons';
+  import { mapMarker } from 'svelte-awesome/icons';
 
   function getAlbumCoverUrl( albumId ) {
     const album = albums.filter( album => album.id === albumId )[0];
@@ -69,7 +69,7 @@
     {#each places as place}
         <a href="place/{place.name}" class="gallery-item">
             <img class="gallery-image" src="{getPlaceCoverUrl( place )}" alt="{place.name}"/>
-            <h1 class="album-caption"><Icon data={map} scale={3}/><br/>{place.name}</h1>
+            <h1 class="album-caption"><Icon data={mapMarker} scale={3}/><br/>{place.name}</h1>
         </a>
     {/each}
 </div>

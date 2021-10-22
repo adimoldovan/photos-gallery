@@ -66,11 +66,11 @@
         </div>
         <div class="footer">
             <div class="keys-help">
-                <div><div class="key">R</div>random photo</div>
-                <div><div class="key">H</div>home page</div>
-                <div><div class="key">&rarr;</div>next photo</div>
-                <div><div class="key">&larr;</div>previous photo</div>
-                <div><div class="key">ESC</div>exit slideshow</div>
+                <div><span class="key">R</span><br>random photo</div>
+                <div><span class="key">H</span><br>home page</div>
+                <div><span class="key">&rarr;</span><br>next photo</div>
+                <div><span class="key">&larr;</span><br>previous photo</div>
+                <div><span class="key">ESC</span><br>exit slideshow</div>
             </div>
         </div>
         <div class="footer-source">
