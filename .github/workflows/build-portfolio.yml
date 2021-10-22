@@ -24,7 +24,7 @@ jobs:
           FLICKR_USER_ID: ${{ secrets.FLICKR_USER_ID }}
           FLICKR_COLLECTION_ID: ${{ secrets.FLICKR_COLLECTION_ID }}
           BIG_DATA_CLOUD_API_KEY: ${{ secrets.BIG_DATA_CLOUD_API_KEY }}
-        run: npm data:flickr
+        run: npm run data:flickr
 
       - name: Push changes
         run: |
