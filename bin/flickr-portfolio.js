@@ -118,13 +118,7 @@ const portfolio = { albums:[], photos:[], tags:[], places:[] };
             .catch( function( error ) {
               console.error( 'Error getting country from coordinates: ', error );
             } );
-
         }
-
-
-
-
-
       }
     } ).catch( function ( err ) {
       console.error( err );
