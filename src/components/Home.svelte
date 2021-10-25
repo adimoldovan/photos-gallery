@@ -28,8 +28,8 @@
   const popularTags = [];
   const otherTags = [];
 
-  for( const tag of tags ) {
-    if( tag.count >= 5 ) {
+  for ( const tag of tags ) {
+    if ( tag.count >= 5 ) {
       popularTags.push( tag );
     } else {
       otherTags.push( tag );
@@ -70,33 +70,41 @@
     }
 </style>
 
-<h2>Albums</h2>
+<h1 class="page-title">Albums</h1>
 <div id="albums-gallery" class="gallery">
     {#each albums as album (album.id)}
-            <a href="album/{album.title}" class="gallery-item">
-                <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
-                <h1 class="album-caption">{album.title}</h1>
-                <h3 class="photo-count">{album.photos.length} photo{#if album.photos.length>1}s{/if}</h3>
-            </a>
+        <a href="album/{album.title}" class="gallery-item">
+            <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
+            <h1 class="album-caption">{album.title}</h1>
+            <h3 class="photo-count">{album.photos.length} photo
+                {#if album.photos.length > 1}s{/if}
+            </h3>
+        </a>
     {/each}
 </div>
-<h2>Places</h2>
+<h1 class="page-title">Places</h1>
 <div id="places-gallery" class="gallery">
     {#each places as place}
         <a href="place/{place.name}" class="gallery-item">
             <img class="gallery-image" src="{getPlaceCoverUrl( place )}" alt="{place.name}"/>
-            <h1 class="album-caption"><Icon data={mapMarker} scale={3}/><br/>{place.name}</h1>
-            <h3 class="photo-count">{place.count} photo{#if place.count>1}s{/if}</h3>
+            <h1 class="album-caption">
+                <Icon data={mapMarker} scale={3}/>
+                <br/>{place.name}</h1>
+            <h3 class="photo-count">{place.count} photo
+                {#if place.count > 1}s{/if}
+            </h3>
         </a>
     {/each}
 </div>
-<h2>Tags</h2>
+<h1 class="page-title">Tags</h1>
 <div id="tags-gallery" class="gallery">
     {#each popularTags as tag}
         <a href="tag/{tag.tag}" class="gallery-item">
             <img class="gallery-image" src="{getTagCoverUrl( tag )}" alt="{tag.tag}"/>
             <h1 class="album-caption">#{tag.tag}</h1>
-            <h3 class="photo-count">{tag.count} photo{#if tag.count>1}s{/if}</h3>
+            <h3 class="photo-count">{tag.count} photo
+                {#if tag.count > 1}s{/if}
+            </h3>
         </a>
     {/each}
 </div>

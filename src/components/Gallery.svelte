@@ -1,70 +1,70 @@
 <script>
-    export let title;
-    export let photoIds;
+  export let title;
+  export let photoIds;
 
-    import { photos } from '../../public/portfolio.json';
+  import { photos } from '../../public/portfolio.json';
 
-    const sizes = [ 'url_k', 'url_h', 'url_l', 'url_c', 'url_z' ];
+  const sizes = [ 'url_k', 'url_h', 'url_l', 'url_c', 'url_z' ];
 
-    function getPhotoSource( photoId, sizeLabel, fixSize = true ) {
-      const photo = photos.filter( photo => photo.id === photoId )[0];
+  function getPhotoSource( photoId, sizeLabel, fixSize = true ) {
+    const photo = photos.filter( photo => photo.id === photoId )[0];
 
-      if( !fixSize && !photo[sizeLabel] ) {
-        for( const size of sizes ) {
-          const photo = photos.filter( photo => photo.id === photoId )[0];
-          if ( photo[size] ) {
-            return photo[size];
-          }
+    if ( !fixSize && !photo[sizeLabel] ) {
+      for ( const size of sizes ) {
+        const photo = photos.filter( photo => photo.id === photoId )[0];
+        if ( photo[size] ) {
+          return photo[size];
         }
       }
-
-      return photo[sizeLabel];
     }
 
-    function getNextPhotoId( photoId ) {
-      const currentIdx = photoIds.indexOf( photoId );
+    return photo[sizeLabel];
+  }
 
-      if ( currentIdx === photoIds.length - 1 ) {
-        return photoIds[0];
-      }
-      return photoIds[currentIdx + 1];
+  function getNextPhotoId( photoId ) {
+    const currentIdx = photoIds.indexOf( photoId );
+
+    if ( currentIdx === photoIds.length - 1 ) {
+      return photoIds[0];
+    }
+    return photoIds[currentIdx + 1];
+  }
+
+  function getPreviousPhotoId( photoId ) {
+    const currentIdx = photoIds.indexOf( photoId );
+
+    if ( currentIdx === 0 ) {
+      return photoIds[photoIds.length - 1];
+    }
+    return photoIds[currentIdx - 1];
+  }
+
+  document.addEventListener( 'keydown', function ( event ) {
+    if ( !location.hash.startsWith( '#lightbox' ) ) {
+      return;
     }
 
-    function getPreviousPhotoId( photoId ) {
-      const currentIdx = photoIds.indexOf( photoId );
+    const keyMap = [ {
+      key: 'ArrowRight',
+      selector: 'next'
+    }, {
+      key: 'ArrowLeft',
+      selector: 'prev'
+    },
+    {
+      key: 'Escape',
+      selector: 'close'
+    } ];
 
-      if ( currentIdx === 0 ) {
-        return photoIds[photoIds.length - 1];
+    for ( const keyEntry of keyMap ) {
+      if ( event.key === keyEntry.key ) {
+        const targetElement = document.querySelector( `${location.hash} > a.${keyEntry.selector}` );
+        targetElement.click();
       }
-      return photoIds[currentIdx - 1];
     }
+  } );
 
-    document.addEventListener( 'keydown', function ( event ) {
-      if( !location.hash.startsWith( '#lightbox' ) ) {
-        return;
-      }
-
-      const keyMap = [ {
-        key: 'ArrowRight',
-        selector: 'next'
-      }, {
-        key: 'ArrowLeft',
-        selector: 'prev'
-      },
-      {
-        key: 'Escape',
-        selector: 'close'
-      } ];
-
-      for ( const keyEntry of keyMap ) {
-        if ( event.key === keyEntry.key ) {
-          const targetElement = document.querySelector( `${location.hash} > a.${keyEntry.selector}` );
-          targetElement.click();
-        }
-      }
-    } );
-
-    console.log( location.pathname );
+  console.log( location.pathname );
 
 </script>
 
@@ -81,7 +81,7 @@
         width: 100%;
         height: 100%;
         left: 0;
-        color:#333333;
+        color: #333333;
         transition: opacity .5s ease-in-out;
         background-color: rgba(0, 0, 0, 0.95);
         text-align: center;
@@ -141,7 +141,7 @@
     }
 </style>
 
-<h1 class="album-title">
+<h1 class="page-title">
     {title}
 </h1>
 

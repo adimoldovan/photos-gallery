@@ -1,5 +1,8 @@
 {
   "siteTitle": "Adrian Moldovan",
   "siteSubtitle": "Amateur playing with pro tools",
-  "gitUrl": "https://github.com/adimoldovan/photos-gallery"
+  "gitUrl": "https://github.com/adimoldovan/photos-gallery",
+  "social": {
+    "instagram": "https://www.instagram.com/adim.moldovan"
+  }
 }
