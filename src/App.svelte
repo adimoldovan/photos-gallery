@@ -29,12 +29,12 @@
 
   const allPhotoIds = photos.map( p => p.id );
   document.addEventListener( 'keydown', function ( event ) {
-    if ( event.key === 'r' ) {
+    if ( event.key === 'r' && !location.pathname.includes( 'contact' ) ) {
       const randomIdx = Math.floor( ( Math.random() * allPhotoIds.length ) );
       location.assign( `${location.origin}/photo#lightbox-${allPhotoIds[randomIdx]}` );
     }
 
-    if ( event.key === 'h' ) {
+    if ( event.key === 'h' && !location.pathname.includes( 'contact' ) ) {
       location.assign( location.origin );
     }
   } );
@@ -71,10 +71,10 @@
             <div class="site-subtitle">{config.siteSubtitle}</div>
             <div class="contact-header">
                 <a href="{config.social.instagram}" target="_blank">
-                    <Icon scale="1.45" data={instagram}/>
+                    <Icon scale="1.5" data={instagram}/>
                 </a>
                 <a href="contact">
-                    <Icon scale="1.5" data={envelopeO}/>
+                    <Icon scale="1.47" data={envelopeO}/>
                 </a>
             </div>
         </div>
