@@ -69,7 +69,8 @@
     Get in touch
 </h1>
 <div id="contact" class="form-container">
-    <form name="contact" method="POST" data-netlify="true">
+    <form name="contact" method="POST">
+        <input type="hidden" name="form-name" value="contact" />
         <div class="row">
             <div class="label">
                 <label for="input-name">Name</label>
@@ -95,7 +96,7 @@
             </div>
         </div>
         <div class="row">
-            <button type="submit">Send</button>
+            <button type="submit" name="submit">Send</button>
         </div>
     </form>
 </div>
