@@ -68,6 +68,10 @@
         width: 100%;
         transform: translateY(50%);
     }
+
+    .sub {
+        margin-top: 10vh;
+    }
 </style>
 
 <h1 class="page-title">Albums</h1>
@@ -81,7 +85,7 @@
         </a>
     {/each}
 </div>
-<h1 class="page-title">Places</h1>
+<h1 class="page-title sub">Places</h1>
 <div id="places-gallery" class="gallery">
     {#each places as place}
         <a href="place/{place.name}" class="gallery-item">
@@ -94,7 +98,7 @@
         </a>
     {/each}
 </div>
-<h1 class="page-title">Tags</h1>
+<h1 class="page-title sub">Tags</h1>
 <div id="tags-gallery" class="gallery">
     {#each popularTags as tag}
         <a href="tag/{tag.tag}" class="gallery-item">

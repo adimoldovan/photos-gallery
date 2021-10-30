@@ -58,6 +58,8 @@ h2 {
 
 .page-title {
     text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .gallery {
@@ -104,24 +106,32 @@ h2 {
     .gallery-item {
         margin: 0;
     }
-}
 
-@media only screen and (max-width: 810px) {
-    .gallery-image {
-        max-height: 270px;
+    @media only screen and (min-width: 1450px) {
+        .gallery {
+            grid-template-columns: repeat(auto-fill, minmax(640px, auto));
+        }
+        .gallery-image {
+            max-height: 500px;
+        }
     }
-}
 
-/*
+    @media only screen and (max-width: 810px) {
+        .gallery-image {
+            max-height: 270px;
+        }
+    }
+
+    /*
     on single column let portrait images be 100% in height
     350px x 2 (columns) + 20px (padding) + 10px (gap)
-*/
-@media only screen and (max-width: 730px) {
-    .gallery-image {
-        max-height: 100%;
+    */
+    @media only screen and (max-width: 730px) {
+        .gallery-image {
+            max-height: 100%;
+        }
     }
 }
-
 
 .tags {
     padding-top: 20px;

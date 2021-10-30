@@ -148,7 +148,7 @@
 <div id="gallery" class="gallery">
     {#each photoIds as photoId }
         <a class="gallery-item" href="#lightbox-{photoId}">
-            <img class="gallery-image" src="{getPhotoSource( photoId, 'url_z' )}" alt=""/>
+            <img class="gallery-image" src="{getPhotoSource( photoId, 'url_z' )}" alt="" loading="lazy"/>
         </a>
         <div class="lightbox" id="lightbox-{photoId}">
             <img src="{getPhotoSource( photoId, 'url_k', false )}" alt=""/>
