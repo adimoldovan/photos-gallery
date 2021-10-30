@@ -80,16 +80,15 @@ h2 {
     object-fit: cover;
     cursor: pointer;
     transition: 0.9s;
-    max-height: 280px;
 }
 
-.gallery:hover .gallery-image {
-    filter: saturate(30%) contrast(80%);
-}
+/*.gallery:hover .gallery-image {*/
+/*    !*filter: saturate(30%) contrast(80%);*!*/
+/*}*/
 
-.gallery-item:hover .gallery-image {
-    filter: saturate(100%) contrast(100%);
-}
+/*.gallery-item:hover .gallery-image {*/
+/*    filter: saturate(100%) contrast(100%);*/
+/*}*/
 
 .gallery-image:hover {
     transition: filter 0.5s ease;
@@ -100,6 +99,9 @@ h2 {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(350px, auto));
         grid-gap: 10px;
+    }
+    .gallery-image {
+        max-height: 270px;
     }
 
     .gallery,

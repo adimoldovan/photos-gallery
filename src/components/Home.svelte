@@ -44,29 +44,40 @@
         text-align: center;
         color: #f5f5f5;
         text-shadow: 1px 2px 2px #000;
-        font-size: 2.2em;
+        font-size: 2.5rem;
         letter-spacing: -1px;
         font-weight: bolder;
         opacity: 90%;
         z-index: 1;
-        top: 50%;
+        bottom: 30%;
         width: 100%;
-        transform: translateY(-100%);
     }
 
-    h3.photo-count {
+    h1.photo-count {
         position: absolute;
         text-align: center;
         color: #f5f5f5;
         text-shadow: 1px 2px 2px #000;
-        font-size: 1em;
+        font-size: 1rem;
         letter-spacing: -1px;
         font-weight: bolder;
         opacity: 90%;
         z-index: 1;
-        top: 50%;
+        bottom: 25%;
         width: 100%;
-        transform: translateY(50%);
+    }
+
+    .gallery-item:hover > .album-caption {
+        transform: scale(1.1);
+    }
+
+    .gallery-item:hover > .photo-count {
+        transform: scale(1.7);
+    }
+
+    .gallery-item:hover > h1 {
+        transition: transform 0.5s ease;
+        opacity: 100%;
     }
 
     .sub {
@@ -80,8 +91,8 @@
         <a href="album/{album.title}" class="gallery-item">
             <img class="gallery-image" src="{getAlbumCoverUrl( album.id )}" alt="{album.title}"/>
             <h1 class="album-caption">{album.title}</h1>
-            <h3 class="photo-count">{album.photos.length} photo{#if album.photos.length > 1}s{/if}
-            </h3>
+            <h1 class="photo-count">{album.photos.length} photo{#if album.photos.length > 1}s{/if}
+            </h1>
         </a>
     {/each}
 </div>
@@ -93,8 +104,8 @@
             <h1 class="album-caption">
                 <Icon data={mapMarker} scale={3}/>
                 <br/>{place.name}</h1>
-            <h3 class="photo-count">{place.count} photo{#if place.count > 1}s{/if}
-            </h3>
+            <h1 class="photo-count">{place.count} photo{#if place.count > 1}s{/if}
+            </h1>
         </a>
     {/each}
 </div>
@@ -104,8 +115,8 @@
         <a href="tag/{tag.tag}" class="gallery-item">
             <img class="gallery-image" src="{getTagCoverUrl( tag )}" alt="{tag.tag}"/>
             <h1 class="album-caption">#{tag.tag}</h1>
-            <h3 class="photo-count">{tag.count} photo{#if tag.count > 1}s{/if}
-            </h3>
+            <h1 class="photo-count">{tag.count} photo{#if tag.count > 1}s{/if}
+            </h1>
         </a>
     {/each}
 </div>
