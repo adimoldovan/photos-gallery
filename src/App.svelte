@@ -87,6 +87,7 @@
             <Route path="/" component={Home}/>
         </div>
         <div class="footer">
+            {#if !location.pathname.includes( 'contact' ) }
             <div class="keys-help">
                 <div><span class="key">R</span><br>random photo</div>
                 <div><span class="key">H</span><br>home page</div>
@@ -94,6 +95,7 @@
                 <div><span class="key">&larr;</span><br>previous photo</div>
                 <div><span class="key">ESC</span><br>exit slideshow</div>
             </div>
+            {/if}
         </div>
         <div class="footer-source">
             <a href="{config.gitUrl}" target="_blank">
