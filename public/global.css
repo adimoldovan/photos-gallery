@@ -60,7 +60,18 @@ h2 {
 .page-title {
   text-align: center;
   margin-top: 5vh;
+  margin-bottom: 0;
+}
+
+.page-subtitle {
+  text-align: center;
   margin-bottom: 5vh;
+}
+
+.category-title {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
 }
 
 .gallery {

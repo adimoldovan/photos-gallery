@@ -124,6 +124,7 @@
 <h1 class="page-title">
   {title}
 </h1>
+<div class="page-subtitle">{photoIds.length} photos</div>
 
 <div id="sort-buttons">
   {#each sortOptions as option}

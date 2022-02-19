@@ -25,6 +25,24 @@
     return photos.filter((photo) => photo.id === randomPhotoId)[0].url_z;
   }
 
+  function getAlbumUrl(album) {
+    if(album.id === "0") {
+      return "photo"
+    } else {
+      return `album/${album.title}`
+    }
+  }
+
+  // Push "All" album
+  const allPhotosIds = photos.map((p) => p.id)
+  albums.push({
+    "id": "0",
+    "title": "All photos",
+    "description": "",
+    "photos": allPhotosIds
+  })
+
+  // Get only popular tags
   const popularTags = [];
   const otherTags = [];
 
@@ -37,10 +55,10 @@
   }
 </script>
 
-<h1 class="page-title">Albums</h1>
+<h1 class="category-title">Albums</h1>
 <div id="albums-gallery" class="gallery">
   {#each albums as album (album.id)}
-    <a href="album/{album.title}" class="gallery-item">
+    <a href={getAlbumUrl(album)} class="gallery-item">
       <img
         class="gallery-image"
         src={getAlbumCoverUrl(album.id)}
@@ -53,7 +71,7 @@
     </a>
   {/each}
 </div>
-<h1 class="page-title sub">Places</h1>
+<h1 class="category-title sub">Places</h1>
 <div id="places-gallery" class="gallery">
   {#each places as place}
     <a href="place/{place.name}" class="gallery-item">
@@ -72,7 +90,7 @@
     </a>
   {/each}
 </div>
-<h1 class="page-title sub">Tags</h1>
+<h1 class="category-title sub">Tags</h1>
 <div id="tags-gallery" class="gallery">
   {#each popularTags as tag}
     <a href="tag/{tag.tag}" class="gallery-item">

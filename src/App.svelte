@@ -5,7 +5,7 @@
   import Home from "./components/Home.svelte";
   import Tag from "./components/Tag.svelte";
   import { Icon } from "svelte-awesome";
-  import { envelopeO, github, instagram } from "svelte-awesome/icons";
+  import { envelopeOpenO, github, instagram } from "svelte-awesome/icons";
   import Photo from "./components/Photo.svelte";
   import config from "./../public/config.json";
   import { onMount } from "svelte";
@@ -80,10 +80,10 @@
       <div class="site-subtitle">{config.siteSubtitle}</div>
       <div class="contact-header">
         <a href={config.social.instagram} target="_blank">
-          <Icon scale="1.5" data={instagram} />
+          <Icon style="vertical-align: middle;" scale="1.8" data={instagram} />
         </a>
         <a href="contact">
-          <Icon scale="1.47" data={envelopeO} />
+          <Icon style="vertical-align: middle;" scale="1.5" data={envelopeOpenO} />
         </a>
       </div>
     </div>
