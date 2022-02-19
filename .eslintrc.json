@@ -9,17 +9,11 @@
     "ecmaVersion": 2020,
     "sourceType": "module"
   },
-  "plugins": [
-    "svelte3"
-  ],
-  "extends": [
-    "eslint:recommended"
-  ],
+  "plugins": ["svelte3"],
+  "extends": ["eslint:recommended"],
   "overrides": [
     {
-      "files": [
-        "**/*.svelte"
-      ],
+      "files": ["**/*.svelte"],
       "processor": "svelte3/svelte3"
     }
   ],
@@ -39,40 +33,16 @@
       "error",
       "always",
       {
-        "exceptions": [
-          "-",
-          "+"
-        ]
+        "exceptions": ["-", "+"]
       }
     ],
-    "space-before-blocks": [
-      "error",
-      "always"
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
-    "space-in-parens": [
-      "error",
-      "always"
-    ],
-    "array-bracket-spacing": [
-      "error",
-      "always"
-    ],
-    "semi": [
-      2,
-      "always"
-    ],
-    "quotes": [
-      "warn",
-      "single"
-    ],
-    "indent": [
-      "warn",
-      2
-    ],
+    "space-before-blocks": ["error", "always"],
+    "object-curly-spacing": ["error", "always"],
+    "space-in-parens": ["error", "always"],
+    "array-bracket-spacing": ["error", "always"],
+    "semi": [2, "always"],
+    "quotes": ["warn", "single"],
+    "indent": ["warn", 2],
     "no-eval": "error",
     "no-trailing-spaces": "warn",
     "no-unused-expressions": "error",
