@@ -179,9 +179,9 @@
         width: 100%;
         height: 100%;
         left: 0;
-        color: #333333;
+        color: var(--font-color);
         transition: opacity 0.5s ease-in-out;
-        background-color: rgba(0, 0, 0, 0.95);
+        background-color: var(--bg-color);
         text-align: center;
     }
 
@@ -192,7 +192,6 @@
 
     .lightbox img {
         position: fixed;
-        background-color: white;
         padding: 0;
         max-height: 90%;
         max-width: 90%;
@@ -203,18 +202,19 @@
     }
 
     a.slideshow-nav {
-        color: #333333;
+        color: var(--font-color);
         z-index: 999999;
         text-decoration: none;
         position: fixed;
         font-size: 36px;
         border-radius: 12px;
         padding: 5px 10px 5px 10px;
-        background-color: rgba(204, 204, 204, 0.5);
+        background-color: var(--bg-color);
+        opacity: 70%;
     }
 
     a.slideshow-nav:hover {
-        background-color: rgba(204, 204, 204, 1);
+        opacity: 100%;
     }
 
     a.close {
@@ -231,11 +231,11 @@
     }
 
     a.prev {
-        left: 5%;
+        left: 5.2%;
     }
 
     a.next {
-        right: 5%;
+        right: 5.2%;
     }
 
     #sort-buttons {
@@ -243,13 +243,16 @@
     }
 
     .sort-btn {
+        color: var(--font-color);
         padding: 4px 10px 14px 10px;
         border: 0;
         margin-bottom: 10px;
         background-color: transparent;
+        text-transform: uppercase;
     }
 
     :global(.active) {
         font-weight: bold;
+        font-size: 1rem;
     }
 </style>

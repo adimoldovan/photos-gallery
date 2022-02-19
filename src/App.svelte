@@ -5,7 +5,12 @@
     import Home from './components/Home.svelte';
     import Tag from './components/Tag.svelte';
     import { Icon } from 'svelte-awesome';
-    import { envelopeOpenO, github, instagram } from 'svelte-awesome/icons';
+    import {
+        envelopeOpenO,
+        github,
+        instagram,
+        sunO,
+    } from 'svelte-awesome/icons';
     import Photo from './components/Photo.svelte';
     import config from './../public/config.json';
     import { onMount } from 'svelte';
@@ -70,11 +75,37 @@
         document.body.scrollTop = 0; // For Safari
         document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
+    function toggleTheme() {
+        const currentTheme = localStorage.getItem('theme')
+            ? localStorage.getItem('theme')
+            : null;
+
+        if (!currentTheme) {
+            setTheme('dark');
+        } else {
+            if (currentTheme === 'dark') {
+                setTheme('light');
+            } else {
+                setTheme('dark');
+            }
+        }
+    }
+
+    function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+    }
 </script>
 
 <main class="main">
     <Router {url}>
         <div class="header">
+            <div class="theme-toggle-container">
+                <button class="theme-toggle-btn" on:click={toggleTheme}>
+                    <Icon data={sunO} />
+                </button>
+            </div>
             <h1 class="site-title">
                 <Link to="/">{config.siteTitle}</Link>
             </h1>
