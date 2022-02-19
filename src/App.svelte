@@ -9,7 +9,7 @@
         envelopeOpenO,
         github,
         instagram,
-        sunO,
+        moonO,
     } from 'svelte-awesome/icons';
     import Photo from './components/Photo.svelte';
     import config from './../public/config.json';
@@ -108,7 +108,7 @@
         <div class="header">
             <div class="theme-toggle-container">
                 <button class="theme-toggle-btn" on:click={toggleTheme}>
-                    <Icon data={sunO} />
+                    <Icon data={moonO} />
                 </button>
             </div>
             <h1 class="site-title">
