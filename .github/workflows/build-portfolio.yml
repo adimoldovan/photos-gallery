@@ -1,37 +1,37 @@
 name: Build portfolio
 
 on:
-    workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
-    fetch-flickr-data:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@v2
+  fetch-flickr-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-            - name: Setup Node.js environment
-              uses: actions/setup-node@v2.1.2
-              with:
-                  node-version: 12
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: 12
 
-            - name: Install dependencies
-              run: npm ci
+      - name: Install dependencies
+        run: npm ci
 
-            - name: Fetch Flickr data
-              env:
-                  FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
-                  FLICKR_USER_ID: ${{ secrets.FLICKR_USER_ID }}
-                  FLICKR_COLLECTION_ID: ${{ secrets.FLICKR_COLLECTION_ID }}
-                  BIG_DATA_CLOUD_API_KEY: ${{ secrets.BIG_DATA_CLOUD_API_KEY }}
-              run: npm run data:flickr
+      - name: Fetch Flickr data
+        env:
+          FLICKR_API_KEY: ${{ secrets.FLICKR_API_KEY }}
+          FLICKR_USER_ID: ${{ secrets.FLICKR_USER_ID }}
+          FLICKR_COLLECTION_ID: ${{ secrets.FLICKR_COLLECTION_ID }}
+          BIG_DATA_CLOUD_API_KEY: ${{ secrets.BIG_DATA_CLOUD_API_KEY }}
+        run: npm run data:flickr
 
-            - name: Push changes
-              run: |
-                  git config --local user.name "github-actions-bot"
-                  git config --local user.email "github-actions-bot-noreply@noreply"
-                  git add .
-                  git status
-                  git commit -m "Data update $(date +"%d %b %Y %H-%M %Z")"
-                  git pull --rebase
-                  git push
+      - name: Push changes
+        run: |
+          git config --local user.name "github-actions-bot"
+          git config --local user.email "github-actions-bot-noreply@noreply"
+          git add .
+          git status
+          git commit -m "Data update $(date +"%d %b %Y %H-%M %Z")"
+          git pull --rebase
+          git push
