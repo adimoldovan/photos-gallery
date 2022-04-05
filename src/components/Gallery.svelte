@@ -39,6 +39,11 @@
 		return photo[sizeLabel];
 	}
 
+	function getPhotoTitle(photoId) {
+		const photo = photos.filter(photo => photo.id === photoId)[0];
+		return photo.title ? photo.title : '';
+	}
+
 	function getNextPhotoId(photoId) {
 		const currentIdx = photoIds.indexOf(photoId);
 
@@ -119,6 +124,20 @@
 	.gallery-image:hover {
 		transform: scale(1.1);
 		transition: transform 3s ease;
+	}
+
+	h1.photo-caption {
+		position: absolute;
+		text-align: center;
+		color: #f5f5f5;
+		text-shadow: 1px 2px 2px #000;
+		font-size: 1.5rem;
+		letter-spacing: -1px;
+		font-weight: bolder;
+		opacity: 90%;
+		z-index: 1;
+		bottom: 5%;
+		width: 100%;
 	}
 
 	.lightbox {
@@ -230,12 +249,14 @@
 	{#each photoIds as photoId}
 		<a class="gallery-item" href="#lightbox-{photoId}">
 			<img class="gallery-image" src={getPhotoSource(photoId, 'url_z')} alt="" loading="lazy" />
+<!--			<h1 class="photo-caption">{getPhotoTitle(photoId)}</h1>-->
 		</a>
 		<div class="lightbox" id="lightbox-{photoId}">
 			<img src={getPhotoSource(photoId, 'url_k', false)} alt="" />
 			<a class="slideshow-nav next" href="#lightbox-{getNextPhotoId(photoId)}">&#8594;</a>
 			<a class="slideshow-nav close" href={'#'}>X</a>
 			<a class="slideshow-nav prev" href="#lightbox-{getPreviousPhotoId(photoId)}">&#8592;</a>
+			<h1 class="photo-caption">{getPhotoTitle(photoId)}</h1>
 		</div>
 	{/each}
 </div>

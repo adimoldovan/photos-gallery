@@ -10,7 +10,7 @@
 	function getAlbumCoverUrl(albumId) {
 		const album = albums.filter(album => album.id === albumId)[0];
 		const randomIdx = Math.floor(Math.random() * album.photos.length);
-		if(album.photos.length === 0) {
+		if (album.photos.length === 0) {
 			return 0;
 		}
 		const randomPhotoId = album.photos[randomIdx];
