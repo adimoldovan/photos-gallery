@@ -197,7 +197,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51563844892_d95e3396b8_k.jpg",
       "height_k": 996,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565325719",
@@ -245,7 +246,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51565325719_2d17198075_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565326289",
@@ -293,7 +295,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51565326289_fe114ca91f_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51565326934",
@@ -586,7 +589,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51930901393_70af5a19bb_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51984174293",
@@ -634,7 +638,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51984174293_3bd1e712b9_k.jpg",
       "height_k": 1637,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51983099727",
@@ -682,7 +687,8 @@
       "width_h": 1600,
       "url_k": "https://live.staticflickr.com/65535/51983099727_89e85e6c6a_k.jpg",
       "height_k": 1365,
-      "width_k": 2048
+      "width_k": 2048,
+      "country": "Spain"
     },
     {
       "id": "51984391509",
@@ -727,7 +733,8 @@
       "width_l": 1024,
       "url_h": "https://live.staticflickr.com/65535/51984391509_63f1d00ccc_h.jpg",
       "height_h": 1066,
-      "width_h": 1600
+      "width_h": 1600,
+      "country": "Spain"
     },
     {
       "id": "51563422705",
@@ -3383,37 +3390,37 @@
       "context": 0,
       "place_id": "Pqmih4hXVbOjtHA",
       "woeid": "679601",
-      "url_sq": "https://live.staticflickr.com/65535/51562495866_482506aa88_s.jpg",
+      "url_sq": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
-      "url_t": "https://live.staticflickr.com/65535/51562495866_482506aa88_t.jpg",
+      "url_t": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_t.jpg",
       "height_t": 67,
       "width_t": 100,
-      "url_s": "https://live.staticflickr.com/65535/51562495866_482506aa88_m.jpg",
+      "url_s": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_m.jpg",
       "height_s": 160,
       "width_s": 240,
-      "url_q": "https://live.staticflickr.com/65535/51562495866_482506aa88_q.jpg",
+      "url_q": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_q.jpg",
       "height_q": 150,
       "width_q": 150,
-      "url_m": "https://live.staticflickr.com/65535/51562495866_482506aa88.jpg",
+      "url_m": "https://live.staticflickr.com/65535/51562495866_d41955cbb9.jpg",
       "height_m": 333,
       "width_m": 500,
-      "url_n": "https://live.staticflickr.com/65535/51562495866_482506aa88_n.jpg",
+      "url_n": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_n.jpg",
       "height_n": 213,
       "width_n": 320,
-      "url_z": "https://live.staticflickr.com/65535/51562495866_482506aa88_z.jpg",
+      "url_z": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_z.jpg",
       "height_z": 427,
       "width_z": 640,
-      "url_c": "https://live.staticflickr.com/65535/51562495866_482506aa88_c.jpg",
+      "url_c": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_c.jpg",
       "height_c": 533,
       "width_c": 800,
-      "url_l": "https://live.staticflickr.com/65535/51562495866_482506aa88_b.jpg",
+      "url_l": "https://live.staticflickr.com/65535/51562495866_d41955cbb9_b.jpg",
       "height_l": 683,
       "width_l": 1024,
-      "url_h": "https://live.staticflickr.com/65535/51562495866_2f11d17a29_h.jpg",
+      "url_h": "https://live.staticflickr.com/65535/51562495866_65ce94ca6c_h.jpg",
       "height_h": 1066,
       "width_h": 1600,
-      "url_k": "https://live.staticflickr.com/65535/51562495866_86f02dc301_k.jpg",
+      "url_k": "https://live.staticflickr.com/65535/51562495866_d2f6d75455_k.jpg",
       "height_k": 1365,
       "width_k": 2048
     },
@@ -3431,37 +3438,37 @@
       "context": 0,
       "place_id": "BBOeG9hXVLLN.qY",
       "woeid": "668760",
-      "url_sq": "https://live.staticflickr.com/65535/51562561041_de7d22761a_s.jpg",
+      "url_sq": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
-      "url_t": "https://live.staticflickr.com/65535/51562561041_de7d22761a_t.jpg",
+      "url_t": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_t.jpg",
       "height_t": 67,
       "width_t": 100,
-      "url_s": "https://live.staticflickr.com/65535/51562561041_de7d22761a_m.jpg",
+      "url_s": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_m.jpg",
       "height_s": 160,
       "width_s": 240,
-      "url_q": "https://live.staticflickr.com/65535/51562561041_de7d22761a_q.jpg",
+      "url_q": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_q.jpg",
       "height_q": 150,
       "width_q": 150,
-      "url_m": "https://live.staticflickr.com/65535/51562561041_de7d22761a.jpg",
+      "url_m": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41.jpg",
       "height_m": 333,
       "width_m": 500,
-      "url_n": "https://live.staticflickr.com/65535/51562561041_de7d22761a_n.jpg",
+      "url_n": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_n.jpg",
       "height_n": 213,
       "width_n": 320,
-      "url_z": "https://live.staticflickr.com/65535/51562561041_de7d22761a_z.jpg",
+      "url_z": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_z.jpg",
       "height_z": 427,
       "width_z": 640,
-      "url_c": "https://live.staticflickr.com/65535/51562561041_de7d22761a_c.jpg",
+      "url_c": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_c.jpg",
       "height_c": 533,
       "width_c": 800,
-      "url_l": "https://live.staticflickr.com/65535/51562561041_de7d22761a_b.jpg",
+      "url_l": "https://live.staticflickr.com/65535/51562561041_f4a64e7a41_b.jpg",
       "height_l": 683,
       "width_l": 1024,
-      "url_h": "https://live.staticflickr.com/65535/51562561041_5f8110d0c5_h.jpg",
+      "url_h": "https://live.staticflickr.com/65535/51562561041_6cadefe774_h.jpg",
       "height_h": 1066,
       "width_h": 1600,
-      "url_k": "https://live.staticflickr.com/65535/51562561041_aca703f607_k.jpg",
+      "url_k": "https://live.staticflickr.com/65535/51562561041_64cd5092f3_k.jpg",
       "height_k": 1365,
       "width_k": 2048
     },
@@ -3517,7 +3524,7 @@
       "id": "51582975229",
       "title": "Milky Way",
       "dateupload": "1634078012",
-      "datetaken": "2021-10-29 17:50:48",
+      "datetaken": "2022-04-22 15:40:37",
       "datetakengranularity": 0,
       "datetakenunknown": "0",
       "tags": "astrophotography milkyway nightphotography sky romania",
@@ -3527,37 +3534,37 @@
       "context": 0,
       "place_id": "BBOeG9hXVLLN.qY",
       "woeid": "668760",
-      "url_sq": "https://live.staticflickr.com/65535/51582975229_aa184f4627_s.jpg",
+      "url_sq": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
-      "url_t": "https://live.staticflickr.com/65535/51582975229_aa184f4627_t.jpg",
+      "url_t": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_t.jpg",
       "height_t": 70,
       "width_t": 100,
-      "url_s": "https://live.staticflickr.com/65535/51582975229_aa184f4627_m.jpg",
+      "url_s": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_m.jpg",
       "height_s": 169,
       "width_s": 240,
-      "url_q": "https://live.staticflickr.com/65535/51582975229_aa184f4627_q.jpg",
+      "url_q": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_q.jpg",
       "height_q": 150,
       "width_q": 150,
-      "url_m": "https://live.staticflickr.com/65535/51582975229_aa184f4627.jpg",
+      "url_m": "https://live.staticflickr.com/65535/51582975229_fce7d3f240.jpg",
       "height_m": 352,
       "width_m": 500,
-      "url_n": "https://live.staticflickr.com/65535/51582975229_aa184f4627_n.jpg",
+      "url_n": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_n.jpg",
       "height_n": 225,
       "width_n": 320,
-      "url_z": "https://live.staticflickr.com/65535/51582975229_aa184f4627_z.jpg",
+      "url_z": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_z.jpg",
       "height_z": 451,
       "width_z": 640,
-      "url_c": "https://live.staticflickr.com/65535/51582975229_aa184f4627_c.jpg",
+      "url_c": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_c.jpg",
       "height_c": 564,
       "width_c": 800,
-      "url_l": "https://live.staticflickr.com/65535/51582975229_aa184f4627_b.jpg",
+      "url_l": "https://live.staticflickr.com/65535/51582975229_fce7d3f240_b.jpg",
       "height_l": 722,
       "width_l": 1024,
-      "url_h": "https://live.staticflickr.com/65535/51582975229_1502f15782_h.jpg",
+      "url_h": "https://live.staticflickr.com/65535/51582975229_e282a8338e_h.jpg",
       "height_h": 1127,
       "width_h": 1600,
-      "url_k": "https://live.staticflickr.com/65535/51582975229_270bab6fc0_k.jpg",
+      "url_k": "https://live.staticflickr.com/65535/51582975229_73287117ff_k.jpg",
       "height_k": 1443,
       "width_k": 2048
     },
@@ -3565,47 +3572,47 @@
       "id": "52001690916",
       "title": "Milky Way",
       "dateupload": "1649846965",
-      "datetaken": "2022-04-12 17:04:26",
+      "datetaken": "2022-04-19 18:00:01",
       "datetakengranularity": 0,
       "datetakenunknown": "0",
-      "tags": "spain canaryislands laorotava nightphotography sky nebula astrophotography nightsky milkyway",
+      "tags": "spain canaryislands laorotava",
       "latitude": "28.258714",
       "longitude": "-16.610441",
       "accuracy": "16",
       "context": 0,
       "place_id": "",
       "woeid": "6360633",
-      "url_sq": "https://live.staticflickr.com/65535/52001690916_f156ec983d_s.jpg",
+      "url_sq": "https://live.staticflickr.com/65535/52001690916_1e776bedca_s.jpg",
       "height_sq": 75,
       "width_sq": 75,
-      "url_t": "https://live.staticflickr.com/65535/52001690916_f156ec983d_t.jpg",
+      "url_t": "https://live.staticflickr.com/65535/52001690916_1e776bedca_t.jpg",
       "height_t": 66,
       "width_t": 100,
-      "url_s": "https://live.staticflickr.com/65535/52001690916_f156ec983d_m.jpg",
+      "url_s": "https://live.staticflickr.com/65535/52001690916_1e776bedca_m.jpg",
       "height_s": 159,
       "width_s": 240,
-      "url_q": "https://live.staticflickr.com/65535/52001690916_f156ec983d_q.jpg",
+      "url_q": "https://live.staticflickr.com/65535/52001690916_1e776bedca_q.jpg",
       "height_q": 150,
       "width_q": 150,
-      "url_m": "https://live.staticflickr.com/65535/52001690916_f156ec983d.jpg",
+      "url_m": "https://live.staticflickr.com/65535/52001690916_1e776bedca.jpg",
       "height_m": 331,
       "width_m": 500,
-      "url_n": "https://live.staticflickr.com/65535/52001690916_f156ec983d_n.jpg",
+      "url_n": "https://live.staticflickr.com/65535/52001690916_1e776bedca_n.jpg",
       "height_n": 212,
       "width_n": 320,
-      "url_z": "https://live.staticflickr.com/65535/52001690916_f156ec983d_z.jpg",
+      "url_z": "https://live.staticflickr.com/65535/52001690916_1e776bedca_z.jpg",
       "height_z": 423,
       "width_z": 640,
-      "url_c": "https://live.staticflickr.com/65535/52001690916_f156ec983d_c.jpg",
+      "url_c": "https://live.staticflickr.com/65535/52001690916_1e776bedca_c.jpg",
       "height_c": 529,
       "width_c": 800,
-      "url_l": "https://live.staticflickr.com/65535/52001690916_f156ec983d_b.jpg",
+      "url_l": "https://live.staticflickr.com/65535/52001690916_1e776bedca_b.jpg",
       "height_l": 678,
       "width_l": 1024,
-      "url_h": "https://live.staticflickr.com/65535/52001690916_a9bf0b34e4_h.jpg",
+      "url_h": "https://live.staticflickr.com/65535/52001690916_a250b1b451_h.jpg",
       "height_h": 1059,
       "width_h": 1600,
-      "url_k": "https://live.staticflickr.com/65535/52001690916_57a7bd6e5d_k.jpg",
+      "url_k": "https://live.staticflickr.com/65535/52001690916_0e0ba31464_k.jpg",
       "height_k": 1355,
       "width_k": 2048
     }
@@ -3767,18 +3774,6 @@
       "count": 7
     },
     {
-      "tag": "sky",
-      "photos": [
-        "51635197937",
-        "51562495866",
-        "51562561041",
-        "51582306683",
-        "51582975229",
-        "52001690916"
-      ],
-      "count": 6
-    },
-    {
       "tag": "cloudy",
       "photos": [
         "51562495961",
@@ -3856,13 +3851,13 @@
       "count": 5
     },
     {
-      "tag": "nightphotography",
+      "tag": "sky",
       "photos": [
+        "51635197937",
         "51562495866",
         "51562561041",
         "51582306683",
-        "51582975229",
-        "52001690916"
+        "51582975229"
       ],
       "count": 5
     },
@@ -3917,12 +3912,12 @@
       "count": 4
     },
     {
-      "tag": "astrophotography",
+      "tag": "nightphotography",
       "photos": [
+        "51562495866",
         "51562561041",
         "51582306683",
-        "51582975229",
-        "52001690916"
+        "51582975229"
       ],
       "count": 4
     },
@@ -4053,7 +4048,7 @@
       "count": 3
     },
     {
-      "tag": "romania",
+      "tag": "astrophotography",
       "photos": [
         "51562561041",
         "51582306683",
@@ -4062,11 +4057,11 @@
       "count": 3
     },
     {
-      "tag": "milkyway",
+      "tag": "romania",
       "photos": [
+        "51562561041",
         "51582306683",
-        "51582975229",
-        "52001690916"
+        "51582975229"
       ],
       "count": 3
     },
@@ -4171,6 +4166,14 @@
       "photos": [
         "51562495866",
         "51562561041"
+      ],
+      "count": 2
+    },
+    {
+      "tag": "milkyway",
+      "photos": [
+        "51582306683",
+        "51582975229"
       ],
       "count": 2
     },
@@ -4418,46 +4421,32 @@
         "52001690916"
       ],
       "count": 1
-    },
-    {
-      "tag": "nebula",
-      "photos": [
-        "52001690916"
-      ],
-      "count": 1
-    },
-    {
-      "tag": "nightsky",
-      "photos": [
-        "52001690916"
-      ],
-      "count": 1
     }
   ],
   "places": [
     {
       "name": "South Africa",
       "photos": [
-        "51561863637",
         "51563422705",
+        "51561863637",
         "51561865367",
         "51562654651",
-        "51563585645",
         "51562901908",
+        "51563585645",
+        "51561867082",
         "51563586955",
         "51562903403",
         "51562658601",
+        "51563349629",
         "51563588985",
-        "51561867082",
         "51563589335",
         "51563590800",
-        "51563349629",
         "51562907508",
         "51640287434",
-        "51639695471",
         "51636249698",
-        "51640377854",
-        "51639957093"
+        "51639695471",
+        "51639957093",
+        "51640377854"
       ],
       "count": 20
     },
@@ -4469,14 +4458,14 @@
         "51563354339",
         "51563353844",
         "51563585520",
-        "51563585040",
-        "51563587910",
-        "51561867382",
         "51562901718",
-        "51561867922",
+        "51563585040",
+        "51561867382",
         "51562657121",
+        "51561867922",
+        "51562659636",
         "51563349539",
-        "51562659636"
+        "51563587910"
       ],
       "count": 13
     },
@@ -4484,24 +4473,37 @@
       "name": "Romania",
       "photos": [
         "51636527909",
-        "51640378490",
         "51639568376",
         "51639526311",
-        "51562898923",
+        "51640378490",
         "51563345649",
+        "51562898923",
+        "51563345064",
         "51563844572",
         "51561869797",
-        "51563345064",
         "51639461886"
       ],
       "count": 10
     },
     {
+      "name": "Spain",
+      "photos": [
+        "51563844892",
+        "51565325719",
+        "51565326289",
+        "51930901393",
+        "51984174293",
+        "51983099727",
+        "51984391509"
+      ],
+      "count": 7
+    },
+    {
       "name": "Norway",
       "photos": [
         "51565326934",
-        "51563847797",
         "51619052994",
+        "51563847797",
         "51636676469",
         "51636885465",
         "51640113014"
@@ -4511,8 +4513,8 @@
     {
       "name": "Austria",
       "photos": [
-        "51618332552",
         "51620031170",
+        "51618332552",
         "51620038550",
         "51636028651",
         "51890814683"
