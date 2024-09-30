@@ -9,12 +9,11 @@
 		"ecmaVersion": 2020,
 		"sourceType": "module"
 	},
-	"plugins": ["svelte3"],
+	"plugins": ["svelte"],
 	"extends": ["eslint:recommended", "prettier"],
 	"overrides": [
 		{
-			"files": ["**/*.svelte"],
-			"processor": "svelte3/svelte3"
+			"files": ["**/*.svelte"]
 		}
 	]
 }
